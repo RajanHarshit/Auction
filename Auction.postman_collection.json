@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "92cbc6d4-55cb-4d8f-99bc-53e426699990",
+		"name": "Auction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29705118"
+	},
+	"item": [
+		{
+			"name": "CreateBid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"BidID\":\"bid_1\",\n    \"AdspaceID\":\"ad_7\",\n    \"BidderID\":\"bidder_1\",\n    \"Amount\": 82.00,\n    \"Duration\":30\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/createBid",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createBid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAdSpace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"AdspaceID\":\"ad_7\",\n    \"Name\":\"adspace_2\",\n    \"Description\": \"This is supply id\",\n    \"BasePrice\":83.0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/createAdSpace",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createAdSpace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBidder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"BidderID\":\"bidder_1\",\n    \"Name\":\"Harshit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/createBidder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"createBidder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAdSpace",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/listAdspace",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listAdspace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListBidder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/listBidder",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listBidder"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
